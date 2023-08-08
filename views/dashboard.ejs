@@ -1,0 +1,25 @@
+<!-- dashboard.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+</head>
+<body>
+  <h1>Welcome to the Dashboard</h1>
+  
+  <!-- Display images -->
+  <h2>Images</h2>
+  <% for (let i = 1; i <= 3; i++) { %>
+    <img src="/images/image<%= i %>.jpg" alt="Image <%= i %>" width="200" height="150">
+  <% } %>
+
+  <!-- Display videos -->
+  <h2>Videos</h2>
+  <video width="320" height="240" controls>
+    <source src="/videos/video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</body>
+</html>
